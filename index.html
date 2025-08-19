@@ -1,19 +1,24 @@
 <!doctype html>
 <html>
   <head>
-    <title>PlayHTML</title>
+    <title>Приглашение на PlayHTML</title>
     <meta charset="utf-8">
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/index.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <script src="components/no-email-warning/no-email-warning.js"></script>
+    <script src="components/site-logo/site-logo.js"></script>
   </head>
 
   <body>
-    <section class="no-email-warning">
-      <p>Если вы не видите данное письмо, перейдите по <a href="#">ссылке</a></p>
-    </section>
+    <no-email-warning></no-email-warning>
 
-    <img class="site-logo" src="" width="" height="" alt="">
+    <header>
+      <site-logo></site-logo>
+    </header>
+
+    
 
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <script type="text/javascript" src="script.js"></script>
