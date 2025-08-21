@@ -1,11 +1,15 @@
 .no-email-warning {
   font-size: 0.6875em;
+  text-align: center;
 
   &__text {
-
+    $negative-margin: -5px;
+    margin-left: $negative-margin;
+    margin-right: $negative-margin;
   }
 
   &__link {
-    // color: red;  
+    color: $highlighted-text-color;
+    text-decoration: none;
   }
 }

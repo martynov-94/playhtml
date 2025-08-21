@@ -1,0 +1,34 @@
+.invitation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6px 16px 0;
+
+  background-color: $blocks-background-color;
+
+  &__title {
+    margin: 0;
+
+    font-size: 1.75rem;
+    line-height: 1.179;
+    color: $blue-text-color;
+    text-align: center;
+  }
+
+  &__welcome-text {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.1875;
+    color: $orange-text-color;
+    text-align: center;
+  }
+
+  &__date {
+    align-self: stretch;
+    margin: 0 16px;
+  }
+
+  &__image {
+
+  }
+}

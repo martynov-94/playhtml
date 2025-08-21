@@ -5,4 +5,18 @@
 
 @import "../components/site-logo/site-logo";
 @import "../components/no-email-warning/no-email-warning";
+@import "../components/invitation/invitation";
+@import "../components/date-card/date-card";
 
+
+header {
+  padding: 26px 0 10px;
+
+  text-align: center;
+
+  background-color: $blocks-background-color;
+
+  @media (min-width: $breakpoint-large) {
+    padding-top: 32px;
+  }
+}
