@@ -2,9 +2,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 6px 16px 0;
+  padding: 6px 16px 0;
 
   background-color: $blocks-background-color;
+
+  @media (min-width: $breakpoint-large) {
+    display: grid;
+    grid-template-columns: 1fr 352px;
+    column-gap: 8px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 32px;
+  }
 
   &__title {
     margin: 0;
@@ -13,6 +22,13 @@
     line-height: 1.179;
     color: $blue-text-color;
     text-align: center;
+
+    @media (min-width: $breakpoint-large) {
+      grid-column: 1 / -1;
+
+      font-size: 2.25rem;
+      line-height: 1.1666;
+    }
   }
 
   &__welcome-text {
@@ -21,14 +37,38 @@
     line-height: 1.1875;
     color: $orange-text-color;
     text-align: center;
+
+    @media (min-width: $breakpoint-large) {
+      grid-column: 1 / -1;
+      margin-bottom: 24px;
+      padding: 0 46px;
+
+      font-size: 1.5rem;
+      line-height: 1.1666;
+    }
+
+    br {
+      @media (min-width: $breakpoint-large) {
+        display: none;
+      }
+    }
   }
 
   &__date {
     align-self: stretch;
-    margin: 0 16px;
+    
+    @media (min-width: $breakpoint-large) {
+      max-width: 500px;
+      margin-left: 8px;
+    }
   }
 
   &__image {
-
+    @media (min-width: $breakpoint-large) {
+      width: 352px;
+      height: 286px;
+    }
   }
+
+  
 }

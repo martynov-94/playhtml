@@ -6,6 +6,11 @@
     $negative-margin: -5px;
     margin-left: $negative-margin;
     margin-right: $negative-margin;
+    margin-bottom: 20px;
+
+    @media (min-width: $breakpoint-large) {
+      margin-bottom: 14px;
+    }
   }
 
   &__link {

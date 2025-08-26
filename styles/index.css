@@ -19,6 +19,7 @@ body {
   flex-direction: column;
   height: 100%;
   padding: 16px;
+  padding-bottom: 0;
   font-family: "Trebuchet MS", sans-serif;
   color: #141414;
   background-color: #F6F6F6;
@@ -41,6 +42,12 @@ ol, ul, nav {
 .no-email-warning__text {
   margin-left: -5px;
   margin-right: -5px;
+  margin-bottom: 20px;
+}
+@media (min-width: 600px) {
+  .no-email-warning__text {
+    margin-bottom: 14px;
+  }
 }
 .no-email-warning__link {
   color: #13D6C3;
@@ -51,8 +58,18 @@ ol, ul, nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 6px 16px 0;
+  padding: 6px 16px 0;
   background-color: #FFFFFF;
+}
+@media (min-width: 600px) {
+  .invitation {
+    display: grid;
+    grid-template-columns: 1fr 352px;
+    column-gap: 8px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 32px;
+  }
 }
 .invitation__title {
   margin: 0;
@@ -61,6 +78,13 @@ ol, ul, nav {
   color: #0B379B;
   text-align: center;
 }
+@media (min-width: 600px) {
+  .invitation__title {
+    grid-column: 1/-1;
+    font-size: 2.25rem;
+    line-height: 1.1666;
+  }
+}
 .invitation__welcome-text {
   font-weight: 700;
   font-size: 1rem;
@@ -68,23 +92,49 @@ ol, ul, nav {
   color: #FF4B33;
   text-align: center;
 }
+@media (min-width: 600px) {
+  .invitation__welcome-text {
+    grid-column: 1/-1;
+    margin-bottom: 24px;
+    padding: 0 46px;
+    font-size: 1.5rem;
+    line-height: 1.1666;
+  }
+}
+@media (min-width: 600px) {
+  .invitation__welcome-text br {
+    display: none;
+  }
+}
 .invitation__date {
   align-self: stretch;
-  margin: 0 16px;
 }
+@media (min-width: 600px) {
+  .invitation__date {
+    max-width: 500px;
+    margin-left: 8px;
+  }
+}
+@media (min-width: 600px) {
+  .invitation__image {
+    width: 352px;
+    height: 286px;
+  }
+}
+
 .date-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 16px 0 25px;
   font-size: 2.25rem;
-  line-height: 1.666;
   font-weight: 700;
   color: #FFFFFF;
   background-color: #FF4B33;
   border-radius: 5px;
 }
 .date-card__date {
+  margin-top: -5px;
   font-size: 6rem;
   line-height: 1.15625;
 }
@@ -94,7 +144,7 @@ ol, ul, nav {
 .date-card__webinar-link {
   padding: 8px 16px;
   font-size: 1.125rem;
-  line-height: 1.1666;
+  font-weight: 400;
   color: #FFFFFF;
   text-decoration: none;
   border-radius: 5px;
