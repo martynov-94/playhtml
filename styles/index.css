@@ -151,6 +151,70 @@ ol, ul, nav {
   background-color: #FFB500;
 }
 
+.plan {
+  padding: 24px 16px;
+  font-size: 1.125rem;
+  line-height: 1.1666;
+  color: #FFFFFF;
+  background-color: #0B379B;
+}
+@media (min-width: 600px) {
+  .plan {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+.plan__description {
+  margin: 0;
+}
+.plan__steps-title {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-size: 1.875rem;
+}
+@media (min-width: 600px) {
+  .plan__steps-title {
+    margin-top: 32px;
+  }
+}
+.plan__steps-list-item {
+  position: relative;
+  padding-left: 30px;
+}
+.plan__steps-list-item:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+@media (min-width: 600px) {
+  .plan__steps-list-item:not(:last-of-type) {
+    margin-bottom: 8px;
+  }
+}
+.plan__steps-list-item::after {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  content: "";
+  width: 12px;
+  height: 12px;
+}
+.plan__steps-list-item:nth-of-type(1)::after {
+  top: 7px;
+  border-radius: 50%;
+  background-color: #FFC81A;
+}
+.plan__steps-list-item:nth-of-type(2)::after {
+  width: 0;
+  height: 0;
+  border: 6px solid #13D6C3;
+  border-top: none;
+  border-bottom-width: 10px;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+.plan__steps-list-item:nth-of-type(3)::after {
+  background-color: #FF4B33;
+}
+
 header {
   padding: 26px 0 10px;
   text-align: center;
